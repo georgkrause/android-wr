@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="@string/ResultTableYears" >
+            android:text="@string/result_table_years" >
 
         </TextView>
 
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="@string/ResultTableValue" >
+            android:text="@string/result_table_value" >
         </TextView>
     </TableRow>
 

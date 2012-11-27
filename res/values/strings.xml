@@ -8,7 +8,7 @@
     <string name="input_title_years">Nutzungsdauer in Jahren</string>
     <string name="input_title_percentage">Abschreibungssatz in %</string>
     <string name="send_button">Berechnen</string>
-    <string name="ResultTableYears">Jahr</string>
-    <string name="ResultTableValue">Wert</string>
+    <string name="result_table_years">Jahr</string>
+    <string name="result_table_value">Wert</string>
     <string name="title_activity_ergebnis">Ergebnis</string>
 </resources>
