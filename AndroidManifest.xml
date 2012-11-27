@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sebastiangeorg.wr.rechner"
+    package="net.georgkrause.androidwr"
     android:installLocation="auto"
-    android:versionCode="0010102"
-    android:versionName="0.1.1" >
+    android:versionCode="0010203"
+    android:versionName="0.1.2" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="net.georgkrause.androidwr.depreciation.ShowCalculator"
+            android:name=".ShowCalculator"
             android:label="@string/title_activity_ergebnis" >
         </activity>
     </application>
