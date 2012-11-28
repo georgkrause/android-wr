@@ -11,4 +11,7 @@
     <string name="result_table_years">Jahr</string>
     <string name="result_table_value">Wert</string>
     <string name="title_activity_ergebnis">Ergebnis</string>
+    <string name="error_message">Fehler: </string>
+    <string name="title_error">Es ist ein Fehler aufgetreten</string>
+    <string name="call_depreciation_linear">lineare Abschreibung</string>
 </resources>

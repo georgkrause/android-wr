@@ -5,11 +5,11 @@ This is a simple app for android which can do some Buisness Administration Calcu
 
 current features
 ==========
-nothing
+* calculate linear depreciations
 
 coming soon
 ==========
-calculate depreciation
+* calculate all depreciation types
 
 planned features:
 ==========

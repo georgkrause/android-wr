@@ -35,12 +35,14 @@ public class ResultActivity extends Activity {
 		// load the values from the extras
 		float price = (Integer) extras.get("price");
 		int years = (Integer) extras.get("years");
-		float percentage = (Integer) extras.get("percentage");
+		
+		LinearDepreciation depreciation = new LinearDepreciation(price, years);
+		depreciation.calculate();
 
-		// TODO: #1 Add the calculation
-		// adds new table rows to show the result
-		this.newTableRow(years, percentage);
-		this.newTableRow(years, price);
+		for(int i = 0; i <= years; i++) {
+			float remain = depreciation.getDepreciationRemain(i);
+			this.newTableRow(i, remain);
+		}
 	}
 
 	/**
