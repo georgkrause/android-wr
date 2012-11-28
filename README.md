@@ -16,5 +16,5 @@ planned features:
 
 developer
 ==========
-* Sebastian Pälz
+* Sebastian Pältz
 * Georg Krause

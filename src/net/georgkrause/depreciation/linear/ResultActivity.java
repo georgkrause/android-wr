@@ -1,6 +1,6 @@
-package net.georgkrause.androidwr.depreciation;
+package net.georgkrause.depreciation.linear;
 
-import net.georgkrause.androidwr.R;
+import net.georgkrause.depreciation.R;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -22,7 +22,7 @@ public class ResultActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// select the layout for the activity
-		setContentView(R.layout.activity_result);
+		setContentView(R.layout.depreciation_linear_result);
 
 		// get extras of the intent
 		Bundle extras = getIntent().getExtras();

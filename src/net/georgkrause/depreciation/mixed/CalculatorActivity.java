@@ -1,6 +1,6 @@
-package net.georgkrause.androidwr.depreciation;
+package net.georgkrause.depreciation.mixed;
 
-import net.georgkrause.androidwr.R;
+import net.georgkrause.depreciation.R;
 
 import android.os.Bundle;
 import android.view.Gravity;
@@ -20,14 +20,14 @@ import android.content.Intent;
  * 
  */
 
-public class LinearDepreciationActivity extends Activity implements OnClickListener {
+public class CalculatorActivity extends Activity implements OnClickListener {
 
 	private Button calculateButton;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.linear_depreciation_calculator);
+		setContentView(R.layout.depreciation_mixed_calculator);
 
 		calculateButton = (Button) findViewById(R.id.calculate_button);
 		calculateButton.setOnClickListener(this);
@@ -39,7 +39,7 @@ public class LinearDepreciationActivity extends Activity implements OnClickListe
 
 		// create intent to call another activity
 		final Intent resultIntent = new Intent(this,
-				net.georgkrause.androidwr.depreciation.ResultActivity.class);
+				net.georgkrause.depreciation.mixed.ResultActivity.class);
 
 		// read inputs and safe them in the extras of the intent
 		try {
@@ -52,6 +52,11 @@ public class LinearDepreciationActivity extends Activity implements OnClickListe
 			int valueYearsInt = Integer.parseInt(valueYears.getText()
 					.toString());
 			resultIntent.putExtra("years", valueYearsInt);
+			
+			EditText valuePercentage = (EditText) findViewById(R.id.input_value_percentage);
+			int valuePercentageInt = Integer.parseInt(valuePercentage.getText()
+					.toString());
+			resultIntent.putExtra("percentage", valuePercentageInt);
 		} catch (NumberFormatException e) {
 
 			Toast Error = Toast.makeText(this, "Bitte fülle alle Felder aus!", Toast.LENGTH_SHORT);
