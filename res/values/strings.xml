@@ -4,6 +4,7 @@
     
     <string name="activity_title_calculator">Rechner</string>
     <string name="activity_title_result">Ergebnis</string>
+    <string name="activity_title_main">Abschreibungs-Rechner</string>
     
     <string name="input_title_price">Kaufwert in Euro</string>
     <string name="input_title_years">Nutzungsdauer in Jahren</string>
